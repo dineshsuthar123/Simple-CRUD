@@ -1,0 +1,170 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.page h1 {
+  margin: 4px 0;
+  font-size: 28px;
+}
+
+.card {
+  background: #0f1629;
+  border: 1px solid #22314d;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: #7ea6ff;
+}
+
+.muted {
+  margin: 4px 0 0;
+  color: #a8b3c9;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #12325c;
+  color: #d7e3ff;
+  font-size: 14px;
+}
+
+.pill--error {
+  background: #3f1a26;
+  color: #ffcdd4;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: #dce4f5;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #253758;
+  background: #0a1020;
+  color: #e6edff;
+  padding: 10px 12px;
+  font-size: 15px;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.card__header h2 {
+  margin: 4px 0 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #dce4f5;
+  font-size: 15px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #22314d;
+  vertical-align: top;
+}
+
+th {
+  color: #8fa5c8;
+  font-weight: 600;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table-actions {
+  min-width: 160px;
+}
+
+.action-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid #2c4066;
+  background: #14213a;
+  color: #e6edff;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease,
+    background-color 120ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  border-color: #4d6faf;
+}
+
+button.primary {
+  background: linear-gradient(120deg, #3d6df2, #5596ff);
+  border-color: #3d6df2;
+  color: #0b1020;
+}
+
+button.danger {
+  background: #2c1a1f;
+  border-color: #5f2c36;
+  color: #f8d7da;
+}
+
+@media (min-width: 720px) {
+  .form-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
